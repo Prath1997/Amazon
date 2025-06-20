@@ -53,4 +53,25 @@ public class LoginPage {
 	public void Signin() {
 		Signin.click();
 	}
+	
+	@FindBy(xpath = "//*[@id=\"twotabsearchtextbox\"]")
+	WebElement ClickSearch;
+
+	public void ClickSearch() {
+		ClickSearch.click();
+	}
+
+	@FindBy(xpath = "//*[@id=\"twotabsearchtextbox\"]")
+	WebElement EnterSearch;
+
+	public void EnterSearch() {
+		EnterSearch.sendKeys("iphone");
+	}
+
+	@FindBy(xpath = "//*[@id=\"nav-search-submit-button\"]")
+	WebElement Searchicon;
+
+	public void Searchicon() {
+		Searchicon.click();
+	}
 }

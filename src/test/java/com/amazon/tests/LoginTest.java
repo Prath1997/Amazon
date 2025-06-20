@@ -27,5 +27,14 @@ public class LoginTest extends WebdriverSetup {
     	loginAmazon.Signin();
 	}
     
+	@Test(enabled = true)
+	private void Search() {
+
+		loginAmazon.ClickSearch();
+		loginAmazon.EnterSearch();
+		loginAmazon.Searchicon();
+		Assert.assertEquals(driver.getTitle(), "Amazon.in : iphone");
+	}
+    
     
 }
