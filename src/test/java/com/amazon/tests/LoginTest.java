@@ -1,5 +1,8 @@
 package com.amazon.tests;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -54,7 +57,7 @@ public class LoginTest extends WebdriverSetup {
 		waitUtil.waitForElementToBeVisible(login.Searchicon);
 		login.Searchicon.click();
 		
-		Assert.assertEquals(driver.getTitle(), "Amazon.in : iphone");
+		AssertJUnit.assertEquals(driver.getTitle(), "Amazon.in : iphone");
 		
 	}
 
