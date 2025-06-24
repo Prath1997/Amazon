@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-<<<<<<< HEAD
 
 	WebDriver driver;
 
@@ -40,74 +39,7 @@ public class LoginPage {
 	@FindBy(xpath = "//*[@id=\"nav-search-submit-button\"]")
 	public WebElement Searchicon;
 
-=======
+	@FindBy(xpath = "//*[@id=\"nav-item-signout\"]/span")
+	public WebElement Signout;
 	
-	WebDriver driver;
-	String User = "7875315045";
-	String Pass = "7875315045";
-	
-	public LoginPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-		
-	}
-	@FindBy(xpath="//*[@id=\"nav-link-accountList\"]/a")
-	WebElement Profile;
-	
-	public void Profile() {
-		Profile.click();;
-	}
-	
-	
-	
-	@FindBy(xpath="//*[@id=\"ap_email_login\"]")
-	WebElement Username;
-	
-	public void enterusername() {
-		Username.sendKeys(User);
-	}
-	
-	
-	@FindBy(xpath="//*[@id=\"continue\"]/span/input")
-	WebElement Continue;
-	
-	public void Continue() {
-		Continue.click();
-	}
-	
-	
-	@FindBy(xpath="//*[@id=\"ap_password\"]")
-	WebElement Password;
-	public void enterPassword() {
-		Password.sendKeys(Pass);
-	}
-	
-	@FindBy(xpath="//*[@id=\"signInSubmit\"]")
-	WebElement Signin;
-	
-	public void Signin() {
-		Signin.click();
-	}
-	
-	@FindBy(xpath = "//*[@id=\"twotabsearchtextbox\"]")
-	WebElement ClickSearch;
-
-	public void ClickSearch() {
-		ClickSearch.click();
-	}
-
-	@FindBy(xpath = "//*[@id=\"twotabsearchtextbox\"]")
-	WebElement EnterSearch;
-
-	public void EnterSearch() {
-		EnterSearch.sendKeys("iphone");
-	}
-
-	@FindBy(xpath = "//*[@id=\"nav-search-submit-button\"]")
-	WebElement Searchicon;
-
-	public void Searchicon() {
-		Searchicon.click();
-	}
->>>>>>> branch 'main' of https://github.com/Prath1997/Amazon.git
 }
